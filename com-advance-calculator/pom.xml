@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.advance.calculator</groupId>
+  <artifactId>com-advance-calculator</artifactId>
+  <version>0.0.1</version>
+  <packaging>pom</packaging>
+  <name>com-advance-calculator</name>
+  <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.1.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+  <dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+	<!-- 	<dependency>
+		    <groupId>com.advance.calculator</groupId>
+			<artifactId>com-advance-calculator-computeDays</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.advance.calculator</groupId>
+			<artifactId>com-advance-calculator-computePower</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.advance.calculator.commonService</groupId>
+			<artifactId>com-advance-calculator-commonService</artifactId>
+			<version>0.0.1</version>
+		</dependency> -->
+	</dependencies>
+  <modules>
+  	<module>com-advance-calculator-computePower</module>
+  	<module>com-advance-calculator-computeDays</module>
+  	<module>com-advance-calculator-commonService</module>
+  	<module>commonIOService</module>
+  </modules>
+</project>
